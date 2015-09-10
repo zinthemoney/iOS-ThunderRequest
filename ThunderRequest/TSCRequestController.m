@@ -1,9 +1,10 @@
 #import "TSCRequestController.h"
 #import "TSCRequest.h"
-#import "TSCRequestResponse.h"
 #import "TSCErrorRecoveryAttempter.h"
 #import "TSCErrorRecoveryOption.h"
 #import "TSCRequestCredential.h"
+#import "ThunderRequest.h"
+#import <ThunderRequest/ThunderRequest-Swift.h>
 
 @interface TSCRequestController () <NSURLSessionDownloadDelegate, NSURLSessionTaskDelegate>
 

@@ -37,7 +37,7 @@ class ThunderRequestTests: XCTestCase {
         
         let finishExpectation = expectationWithDescription("GET Request")
         
-        requestController.get("get") { (response, error) -> Void in
+        requestController.get("get") { (response:, error) -> Void in
             
             XCTAssertNil(error, "Request controller returned error for GET request")
             XCTAssertNotNil(response, "Request Controller did not return a resposne object")

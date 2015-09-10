@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49AB6A591BA04890004EA610 /* TSCRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AB6A581BA04890004EA610 /* TSCRequestResponse.swift */; };
 		49B77E0E1B36A7BF001475CE /* TSCErrorRecoveryAttempter.h in Headers */ = {isa = PBXBuildFile; fileRef = 49B77E061B36A7BF001475CE /* TSCErrorRecoveryAttempter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49B77E0F1B36A7BF001475CE /* TSCErrorRecoveryAttempter.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B77E071B36A7BF001475CE /* TSCErrorRecoveryAttempter.m */; };
 		49B77E101B36A7BF001475CE /* TSCErrorRecoveryOption.h in Headers */ = {isa = PBXBuildFile; fileRef = 49B77E081B36A7BF001475CE /* TSCErrorRecoveryOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,11 +24,10 @@
 		C2E508A819C835D900350F00 /* TSCRequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E5089F19C835D900350F00 /* TSCRequestController.m */; };
 		C2E508A919C835D900350F00 /* TSCRequestCredential.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E508A019C835D900350F00 /* TSCRequestCredential.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2E508AA19C835D900350F00 /* TSCRequestCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E508A119C835D900350F00 /* TSCRequestCredential.m */; };
-		C2E508AB19C835D900350F00 /* TSCRequestResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E508A219C835D900350F00 /* TSCRequestResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E508AC19C835D900350F00 /* TSCRequestResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E508A319C835D900350F00 /* TSCRequestResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49AB6A581BA04890004EA610 /* TSCRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSCRequestResponse.swift; sourceTree = "<group>"; };
 		49B77E061B36A7BF001475CE /* TSCErrorRecoveryAttempter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCErrorRecoveryAttempter.h; sourceTree = "<group>"; };
 		49B77E071B36A7BF001475CE /* TSCErrorRecoveryAttempter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCErrorRecoveryAttempter.m; sourceTree = "<group>"; };
 		49B77E081B36A7BF001475CE /* TSCErrorRecoveryOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCErrorRecoveryOption.h; sourceTree = "<group>"; };
@@ -48,8 +48,6 @@
 		C2E5089F19C835D900350F00 /* TSCRequestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCRequestController.m; sourceTree = "<group>"; };
 		C2E508A019C835D900350F00 /* TSCRequestCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCRequestCredential.h; sourceTree = "<group>"; };
 		C2E508A119C835D900350F00 /* TSCRequestCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCRequestCredential.m; sourceTree = "<group>"; };
-		C2E508A219C835D900350F00 /* TSCRequestResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCRequestResponse.h; sourceTree = "<group>"; };
-		C2E508A319C835D900350F00 /* TSCRequestResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCRequestResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +96,7 @@
 				C2E5089F19C835D900350F00 /* TSCRequestController.m */,
 				C2E508A019C835D900350F00 /* TSCRequestCredential.h */,
 				C2E508A119C835D900350F00 /* TSCRequestCredential.m */,
-				C2E508A219C835D900350F00 /* TSCRequestResponse.h */,
-				C2E508A319C835D900350F00 /* TSCRequestResponse.m */,
+				49AB6A581BA04890004EA610 /* TSCRequestResponse.swift */,
 				49B77E061B36A7BF001475CE /* TSCErrorRecoveryAttempter.h */,
 				49B77E071B36A7BF001475CE /* TSCErrorRecoveryAttempter.m */,
 				49B77E081B36A7BF001475CE /* TSCErrorRecoveryOption.h */,
@@ -145,7 +142,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2E508AB19C835D900350F00 /* TSCRequestResponse.h in Headers */,
 				C2E508A419C835D900350F00 /* ThunderRequest.h in Headers */,
 				49B77E141B36A7BF001475CE /* UIAlertController+TSCErrorRecoveryAttempter.h in Headers */,
 				49B77E101B36A7BF001475CE /* TSCErrorRecoveryOption.h in Headers */,
@@ -255,11 +251,11 @@
 			files = (
 				C2E508AA19C835D900350F00 /* TSCRequestCredential.m in Sources */,
 				49B77E151B36A7BF001475CE /* UIAlertController+TSCErrorRecoveryAttempter.m in Sources */,
-				C2E508AC19C835D900350F00 /* TSCRequestResponse.m in Sources */,
 				C2E508A819C835D900350F00 /* TSCRequestController.m in Sources */,
 				49B77E0F1B36A7BF001475CE /* TSCErrorRecoveryAttempter.m in Sources */,
 				C2E508A619C835D900350F00 /* TSCRequest.m in Sources */,
 				49B77E111B36A7BF001475CE /* TSCErrorRecoveryOption.m in Sources */,
+				49AB6A591BA04890004EA610 /* TSCRequestResponse.swift in Sources */,
 				49F7B2E51B96F53100DDB587 /* TSCRequestDefines.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,11 +360,13 @@
 		C2E5089619C835A300350F00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = ThunderRequest/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -377,17 +375,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.threesidedcube.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		C2E5089719C835A300350F00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = ThunderRequest/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
