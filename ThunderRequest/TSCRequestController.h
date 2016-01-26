@@ -9,6 +9,7 @@
 
 @class TSCRequestResponse;
 @class TSCRequestCredential;
+@class TSCRequest;
 
 /**
  A `TSCRequestController` object lets you asynchronously load the contents of a URL with a block returned upon completion.
@@ -66,6 +67,13 @@ typedef void (^TSCRequestProgressHandler)(CGFloat progress);
  @param baseAddress The `NSString` to initialise the controller with. This will be converted to a NSURL and be used as the base for all requests.
  */
 - (nonnull instancetype)initWithBaseAddress:(nonnull NSString *)baseAddress;
+
+/**
+ Schedules a request object to be performed with a certain completion block
+ @param request The request to perform
+ @param completion A block of code which will be called when the request has completed
+ */
+- (void)scheduleRequest:(nonnull TSCRequest *)request completion:(nullable TSCRequestCompletionHandler)completion;
 
 ///---------------------------------------------------------------------------------------
 /// @name GET requests

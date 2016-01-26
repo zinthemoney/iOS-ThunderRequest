@@ -123,6 +123,7 @@
     request.URLParameterDictionary = URLParamDictionary;
     request.requestHeaders = self.sharedRequestHeaders;
 
+    [request prepareForDispatch];
     [self scheduleRequest:request completion:completion];
 }
 
@@ -149,6 +150,7 @@
     request.contentType = contentType;
     request.requestHeaders = self.sharedRequestHeaders;
 
+    [request prepareForDispatch];
     [self scheduleRequest:request completion:completion];
 }
 
@@ -174,6 +176,7 @@
     request.contentType = contentType;
     request.requestHeaders = self.sharedRequestHeaders;
 
+    [request prepareForDispatch];
     [self scheduleRequest:request completion:completion];
 }
 
@@ -193,6 +196,7 @@
     request.URLParameterDictionary = URLParamDictionary;
     request.requestHeaders = self.sharedRequestHeaders;
 
+    [request prepareForDispatch];
     [self scheduleRequest:request completion:completion];
 }
 
@@ -207,6 +211,7 @@
     request.URLParameterDictionary = URLParamDictionary;
     request.requestHeaders = self.sharedRequestHeaders;
 
+    [request prepareForDispatch];
     [self scheduleRequest:request completion:completion];
 }
 
@@ -250,8 +255,6 @@
 
 - (void)scheduleRequest:(TSCRequest *)request completion:(TSCRequestCompletionHandler)completion
 {
-    [request prepareForDispatch];
-    
     if (self.runSynchronously) {
         
         NSURLResponse *response = nil;
@@ -289,6 +292,7 @@
         
         [recoveryAttempter addOption:[TSCErrorRecoveryOption optionWithTitle:@"Retry" type:TSCErrorRecoveryOptionTypeRetry handler:^(TSCErrorRecoveryOption *option) {
             
+            [request prepareForDispatch];
             [self scheduleRequest:request completion:completion];
             
         }]];
